@@ -253,6 +253,7 @@ class DataGenerator:
                     step["arguments"] = {"query": faker.sentence(nb_words=4)}
                 else:
                     step["content"] = faker.paragraph(nb_sentences=2)
+                steps.append(step)
             traces.append(
                 {
                     "trace_id": str(uuid.uuid4()),
